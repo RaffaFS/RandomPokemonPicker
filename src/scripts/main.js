@@ -7,7 +7,7 @@ pokeForm.addEventListener('submit', request)
 async function request(e){
     e.preventDefault()
     try{
-        const pokeName = Math.floor(Math.random() * 1000)
+        const pokeName = Math.ceil(Math.random() * 1025)
         const pokeRequest = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
         const jsonRequest = await pokeRequest.json()
 
