@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    color: rgb(240, 240, 240);
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .container{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        .pokeArea{
+            width: 100%;
+            max-width: 720px;
+            background-color: rgb(41, 41, 43);
+            border: solid 4px rgb(237, 21, 21);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 0 auto;
+
+            @media(max-width: 768px){
+                width: 90%;
+                padding: 8px 16px;
+            }
+
+            .title{
+                font-family: "Kanit", sans-serif;
+                font-size: 40px;
+                margin-bottom: 32px;
+
+                @media(max-width: 768px){
+                    font-size: 32px;
+                    margin-bottom: 8px;
+                }
+            }
+            .form{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 16px;
+                margin-bottom: 16px;
+
+                .btn{
+                    background-color: rgb(237, 21, 21);
+                    font-size: 18px;
+                    padding: 4px 16px;
+                    border-radius: 16px;
+                    border: solid 2px rgb(240, 240, 240);
+                    transition: all ease .3s;
+
+                    &:hover{
+                        transform: scale(.96);
+                        box-shadow: 0 0 0 8 #fff;
+                    }
+                }
+            }
+            .informations{
+                img{
+                    width: 144px;
+                }
+
+                p{
+                    margin-bottom: 8px;
+                    font-size: 18px;
+
+                    @media(max-width: 768px){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
