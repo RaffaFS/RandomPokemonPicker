@@ -16,6 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: all ease .4s;
 
     &::after{
         background-color: #fff3;
@@ -31,9 +32,9 @@ body{
         .pokeArea{
             width: 100%;
             max-width: 720px;
-            background-color: #000D;
+            background-color: #000E;
             border: solid 2px rgb(237, 21, 21);
-            box-shadow: rgb(237, 21, 21) 0 0 4px, #000D -1px 4px 4px;
+            box-shadow: rgb(237, 21, 21) 0 0 4px, #000E -1px 4px 4px;
             border-radius: 32px;
             padding: 32px;
             margin: 0 auto;
@@ -47,7 +48,7 @@ body{
                 font-family: "Kanit", sans-serif;
                 font-size: 40px;
                 margin-bottom: 32px;
-                text-shadow: rgb(237, 21, 21) 0 0 2px, #000D -1px 4px 4px;
+                text-shadow: rgb(237, 21, 21) 0 0 2px, #000E -1px 4px 4px;
 
                 @media(max-width: 768px){
                     font-size: 32px;
@@ -78,7 +79,12 @@ body{
             }
             .informations{
                 img{
-                    width: 144px;
+                    height: 144px;
+                    transition: all ease .2s;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
                 }
 
                 p{
@@ -93,3 +99,48 @@ body{
         }
     }
 }
+
+.type{
+    &::after{
+        background-color: #0003;
+        backdrop-filter: blur(4px);
+    }
+}
+
+.bug{
+    background-image: url('../img/typeBackground/bug.jpg');}
+.dark{
+    background-image: url('../img/typeBackground/dark.jpg');
+    background-position: bottom;
+}
+.dragon{background-image: url('../img/typeBackground/dragon.jpg');}
+.electric{background-image: url('../img/typeBackground/electric.jpg');}
+.fairy{background-image: url('../img/typeBackground/fairy.jpg');}
+.fighting{background-image: url('../img/typeBackground/fighting.jpg');}
+.fire{background-image: url('../img/typeBackground/fire.jpg');}
+.flying{background-image: url('../img/typeBackground/flying.jpg');}
+.ghost{
+    background-image: url('../img/typeBackground/ghost.jpg');
+    background-position: bottom;
+}
+.grass{background-image: url('../img/typeBackground/grass.jpg');}
+.ground{background-image: url('../img/typeBackground/ground.jpg');}
+.ice{
+    background-image: url('../img/typeBackground/ice.jpg');
+    background-position: bottom;
+}
+.normal{
+    background-image: url('../img/typeBackground/normal.jpg');
+    background-position: bottom;
+}
+.poison{
+    background-image: url('../img/typeBackground/poison.jpg');
+    background-position: bottom;
+}
+.psychic{background-image: url('../img/typeBackground/psychic.jpg');}
+.rock{
+    background-image: url('../img/typeBackground/rock.jpg');
+    background-position: top;
+}
+.steel{background-image: url('../img/typeBackground/steel.jpg');}
+.water{background-image: url('../img/typeBackground/water.jpg');}
