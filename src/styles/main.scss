@@ -6,26 +6,33 @@
     color: rgb(240, 240, 240);
 }
 
+.preload-images{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background-image: 
+        url('../img/typeBackground/bug.jpg'), 
+        url('../img/typeBackground/dark.jpg'),
+        url('../img/typeBackground/dragon.jpg'),
+        url('../img/typeBackground/electric.jpg'),
+        url('../img/typeBackground/fairy.jpg'),
+        url('../img/typeBackground/fighting.jpg'),
+        url('../img/typeBackground/fire.jpg'),
+        url('../img/typeBackground/flying.jpg'),
+        url('../img/typeBackground/ghost.jpg'),
+        url('../img/typeBackground/grass.jpg'),
+        url('../img/typeBackground/ground.jpg'),
+        url('../img/typeBackground/ice.jpg'),
+        url('../img/typeBackground/normal.jpg'),
+        url('../img/typeBackground/poison.jpg'),
+        url('../img/typeBackground/psychic.jpg'),
+        url('../img/typeBackground/rock.jpg'),
+        url('../img/typeBackground/steel.jpg'),
+        url('../img/typeBackground/water.jpg');
+}
+
 body{
-    background-image: url('../img/typeBackground/bug.jpg');
-    background-image: url('../img/typeBackground/dark.jpg');
-    background-image: url('../img/typeBackground/dragon.jpg');
-    background-image: url('../img/typeBackground/electric.jpg');
-    background-image: url('../img/typeBackground/fairy.jpg');
-    background-image: url('../img/typeBackground/fighting.jpg');
-    background-image: url('../img/typeBackground/fire.jpg');
-    background-image: url('../img/typeBackground/flying.jpg');
-    background-image: url('../img/typeBackground/ghost.jpg');
-    background-image: url('../img/typeBackground/grass.jpg');
-    background-image: url('../img/typeBackground/ground.jpg');
-    background-image: url('../img/typeBackground/ice.jpg');
-    background-image: url('../img/typeBackground/normal.jpg');
-    background-image: url('../img/typeBackground/poison.jpg');
-    background-image: url('../img/typeBackground/psychic.jpg');
-    background-image: url('../img/typeBackground/rock.jpg');
-    background-image: url('../img/typeBackground/steel.jpg');
-    background-image: url('../img/typeBackground/water.jpg');
-    
     background-image: url("../img/mainBack8.jpg");
     background-repeat: no-repeat;
     background-position: center;
